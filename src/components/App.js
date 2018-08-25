@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/App.css';
 import Header from './Header/Header';
+import Formulario from './Formulario/Formulario';
 
 class App extends Component {
   render() {
@@ -11,7 +12,7 @@ class App extends Component {
         <div className="contenido-principal contenido">
           <div className="row">
             <div className="one-half column">
-
+              <Formulario />
             </div>
             <div className="one-half column">
 
