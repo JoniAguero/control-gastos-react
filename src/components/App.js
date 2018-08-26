@@ -9,19 +9,21 @@ class App extends Component {
     super(props);
 
     this.state = {
-      tipoGasto: '',
-      monto: ''
+      presupuesto: '',
+      restante: '',
+      gastos: {}
     }
 
   }
 
-  agregarGasto = (datos) => {
+  agregarGasto = gasto => {
 
-    const {tipoGasto, monto} = datos;
+    const gastos = {...this.state.gastos};
+
+    gastos[`gasto${Date.now()}`] = gasto;
 
     this.setState({
-      tipoGasto: tipoGasto,
-      monto: monto
+      gastos
     })
 
   }
