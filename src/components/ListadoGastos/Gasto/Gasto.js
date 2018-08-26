@@ -2,10 +2,16 @@ import React, { Component } from 'react'
 
 export class Gasto extends Component {
   render() {
+
+    const {monto, nombre} = this.props.gasto;
+
     return (
-      <div>
-        desde gasto
-      </div>
+      <li className="gastos">
+        <p>
+            {nombre}
+            <span className="gasto">$ {monto}</span>
+        </p>
+      </li>
     )
   }
 }

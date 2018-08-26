@@ -40,7 +40,7 @@ class App extends Component {
               <Formulario agregarGasto = { this.agregarGasto }/>
             </div>
             <div className="one-half column">
-              <ListadoGastos />
+              <ListadoGastos gastos={this.state.gastos} />
             </div>
           </div>
         </div>
