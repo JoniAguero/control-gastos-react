@@ -4,6 +4,28 @@ import Header from './Header/Header';
 import Formulario from './Formulario/Formulario';
 
 class App extends Component {
+
+  constructor(props){
+    super(props);
+
+    this.state = {
+      tipoGasto: '',
+      monto: ''
+    }
+
+  }
+
+  agregarGasto = (datos) => {
+
+    const {tipoGasto, monto} = datos;
+
+    this.setState({
+      tipoGasto: tipoGasto,
+      monto: monto
+    })
+
+  }
+
   render() {
     return (
       <div className="App container">
@@ -12,7 +34,7 @@ class App extends Component {
         <div className="contenido-principal contenido">
           <div className="row">
             <div className="one-half column">
-              <Formulario />
+              <Formulario agregarGasto = { this.agregarGasto }/>
             </div>
             <div className="one-half column">
 
