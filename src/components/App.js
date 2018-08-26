@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/App.css';
 import Header from './Header/Header';
 import Formulario from './Formulario/Formulario';
+import { ListadoGastos } from './ListadoGastos/ListadoGastos';
 
 class App extends Component {
 
@@ -39,7 +40,7 @@ class App extends Component {
               <Formulario agregarGasto = { this.agregarGasto }/>
             </div>
             <div className="one-half column">
-
+              <ListadoGastos />
             </div>
           </div>
         </div>
