@@ -13,4 +13,4 @@ export class ControlPresupuesto extends Component {
   }
 }
 
-export default ControlPresupuesto
+export default ControlPresupuesto;

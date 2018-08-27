@@ -3,11 +3,11 @@ import React, { Component } from 'react'
 export class Restante extends Component {
   render() {
     return (
-      <div>
-        
-      </div>
+        <div className="alert alert-success">
+            <p> Restante: $ {this.props.restante} </p>
+        </div>
     )
   }
 }
 
-export default Restante
+export default Restante;
