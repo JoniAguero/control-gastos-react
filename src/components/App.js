@@ -5,6 +5,7 @@ import Formulario from './Formulario/Formulario';
 import { ListadoGastos } from './ListadoGastos/ListadoGastos';
 
 import { validarPresupuesto } from "../js/helper";
+import { ControlPresupuesto } from './ControlPresupuesto/ControlPresupuesto';
 
 class App extends Component {
 
@@ -62,6 +63,10 @@ class App extends Component {
             </div>
             <div className="one-half column">
               <ListadoGastos gastos={this.state.gastos} />
+              <ControlPresupuesto 
+                presupuesto={this.state.presupuesto}
+                restante={this.state.restante}
+               />
             </div>
           </div>
         </div>
