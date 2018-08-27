@@ -15,6 +15,8 @@ class Formulario extends Component {
         }
 
         this.props.agregarGasto(GASTO);
+
+        e.currentTarget.reset();
         
     }
 

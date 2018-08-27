@@ -45,10 +45,21 @@ class App extends Component {
 
     gastos[`gasto${Date.now()}`] = gasto;
 
+    this.controlRestante(gasto.monto);
+
     this.setState({
       gastos
     })
 
+  }
+
+  controlRestante = cantidad => {
+    let resultado = Number(cantidad);
+    let restante = this.state.restante;
+    restante -= resultado;
+    this.setState({
+      restante
+    })
   }
 
   render() {
